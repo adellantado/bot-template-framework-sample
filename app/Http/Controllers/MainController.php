@@ -11,14 +11,18 @@ class MainController extends Controller {
     use StrategyTrait;
 
     public function listen() {
-        /** @var BotMan $bot */
-        $bot = resolve('bot');
+        /** @var BotMan $botman */
+        $botman = resolve('botman');
 
         /** @var array $template */
         $template = resolve('template');
-        $templateEngine = new TemplateEngine($template, $bot);
+        $templateEngine = new TemplateEngine($template, $botman);
         $templateEngine->listen();
 
-        $bot->listen();
+        $botman->hears('test', function($bot){
+            $bot->reply('works!');
+        });
+
+        $botman->listen();
     }
 }
