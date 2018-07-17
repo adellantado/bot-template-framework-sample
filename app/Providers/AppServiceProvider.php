@@ -35,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
 
         $this->app->singleton('botman', function ($app) {
             $config = TemplateEngine::getConfig(resolve('template'));
-            return BotManFactory::create($config, new RedisCache(), null);
+            return BotManFactory::create($config, null, null);
         });
     }
 }
