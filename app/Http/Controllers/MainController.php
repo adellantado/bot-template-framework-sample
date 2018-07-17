@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use BotMan\BotMan\BotMan;
 use BotTemplateFramework\Strategies\StrategyTrait;
 use BotTemplateFramework\TemplateEngine;
+use Illuminate\Http\Response;
 
 class MainController extends Controller {
     use StrategyTrait;
@@ -25,4 +26,8 @@ class MainController extends Controller {
 
         $botman->listen();
     }
+
+     public function index() {
+        return new Response('More at: <a href="https://github.com/adellantado/bot-template-framework">https://github.com/adellantado/bot-template-framework</a>');
+     }
 }
