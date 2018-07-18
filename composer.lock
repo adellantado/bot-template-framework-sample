@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adellantado/bot-template-framework.git",
-                "reference": "aa139b91390ea00def6ea4d3fddd7e148b9b14ae"
+                "reference": "60bbe75496af0875353eeecb308a725d087e5d8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adellantado/bot-template-framework/zipball/aa139b91390ea00def6ea4d3fddd7e148b9b14ae",
-                "reference": "aa139b91390ea00def6ea4d3fddd7e148b9b14ae",
+                "url": "https://api.github.com/repos/adellantado/bot-template-framework/zipball/60bbe75496af0875353eeecb308a725d087e5d8d",
+                "reference": "60bbe75496af0875353eeecb308a725d087e5d8d",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "Botman",
                 "chatbot"
             ],
-            "time": "2018-07-15T15:20:29+00:00"
+            "time": "2018-07-18T17:21:57+00:00"
         },
         {
             "name": "botman/botman",

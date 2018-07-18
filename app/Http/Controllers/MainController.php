@@ -18,7 +18,7 @@ class MainController extends Controller {
         $templateEngine = new TemplateEngine(file_get_contents(app_path('template.json')), $botman);
         $templateEngine->listen();
 
-        $botman->hears('test', function($bot){
+        $botman->hears('test usual hears', function($bot){
             $bot->reply('works!');
         });
 
