@@ -15,8 +15,8 @@ class MainController extends Controller {
         /** @var BotMan $botman */
         $botman = resolve('botman');
 
-        $templateEngine = new TemplateEngine(file_get_contents(app_path('template.json')), $botman);
-        $templateEngine->listen();
+        //$templateEngine = new TemplateEngine(file_get_contents(app_path('template.json')), $botman);
+        //$templateEngine->listen();
 
         $botman->hears('test', function($bot){
             $bot->reply('works!');

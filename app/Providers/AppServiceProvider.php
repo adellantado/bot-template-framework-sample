@@ -30,8 +30,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('botman', function ($app) {
-            $config = TemplateEngine::getConfig(file_get_contents(app_path('template.json')));
-            return BotManFactory::create($config, null, null);
+            //$config = TemplateEngine::getConfig(file_get_contents(app_path('template.json')));
+            return BotManFactory::create(['telegram' => ['token' => env('TELEGRAM_TOKEN')]], null, null);
         });
     }
 }

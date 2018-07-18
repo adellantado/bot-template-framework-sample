@@ -11,6 +11,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
+        "symfony/cache": "^4.1",
         "symfony/http-foundation": "v4.0",
         "symfony/http-kernel": "v4.0"
     },
