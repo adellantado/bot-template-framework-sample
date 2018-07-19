@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "adellantado/bot-template-framework",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adellantado/bot-template-framework.git",
-                "reference": "12eee4388b5ffc9905e65ff55aff95906bca2c28"
+                "reference": "c72d6033649e307eda1433a60aa8cf52507aeef3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adellantado/bot-template-framework/zipball/12eee4388b5ffc9905e65ff55aff95906bca2c28",
-                "reference": "12eee4388b5ffc9905e65ff55aff95906bca2c28",
+                "url": "https://api.github.com/repos/adellantado/bot-template-framework/zipball/c72d6033649e307eda1433a60aa8cf52507aeef3",
+                "reference": "c72d6033649e307eda1433a60aa8cf52507aeef3",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "Botman",
                 "chatbot"
             ],
-            "time": "2018-07-17T18:17:33+00:00"
+            "time": "2018-07-19T10:07:30+00:00"
         },
         {
             "name": "botman/botman",
