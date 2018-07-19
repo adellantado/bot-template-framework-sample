@@ -1,6 +1,6 @@
 This chatbot deployed to Heroku and live on Telegram: https://t.me/template_framework_bot
 
-You can download and run on your local machine to get acquainted with Bot Template Framework
+You can download and run on your local machine to get acquainted with Bot Template Framework<br>
 Learn more here: https://github.com/adellantado/bot-template-framework
 
 Scenario:
