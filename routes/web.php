@@ -1,7 +1,6 @@
 <?php
 
 
-Route::get('/', 'MainController@listen');
-Route::post('/', 'MainController@listen');
+Route::post('/bot', 'MainController@listen');
 
-Route::get('/about', 'MainController@index');
+Route::get('/', 'MainController@index');
