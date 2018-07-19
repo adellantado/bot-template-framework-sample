@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
         "php": "^7.1.3",
-        "adellantado/bot-template-framework": "dev-master",
+        "adellantado/bot-template-framework": "^1.0.0",
         "botman/driver-telegram": "^1.5",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
