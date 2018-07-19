@@ -24,11 +24,9 @@ Scenario:
           "content": {
             "url": "https://beedevs.com/images/android-icon-192x192.png",
             "text": "Logo Image",
-            "buttons": [
-              {
+            "buttons": {
                 "https://beedevs.com/": "Visit Website"
-              }
-            ]
+            }
           }
         },
         {
@@ -78,7 +76,7 @@ Scenario:
           "name": "Location Example",
           "type": "location",
           "content": "{{user.firstName}}, please, share your location by clicking button below",
-          "template": "Share",
+          "template": "location",
           "result": {
             "save": "{{location}}"
           }
