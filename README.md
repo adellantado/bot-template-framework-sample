@@ -9,7 +9,7 @@ Scenario:
 
     {
       "name": "Hello World Chatbot",
-      "fallback": "This chatbot shows how to use different blocks. So type 'text', 'image', 'menu', 'file', 'audio', 'video', 'list', 'carousel', 'ask', 'location', 'request', 'method'",
+      "fallback": "This chatbot shows how to use different blocks. So type 'text', 'image', 'menu', 'file', 'audio', 'video', 'list', 'carousel', 'ask', 'location', 'request', 'method', 'extend'",
       "blocks": [
         {
           "name": "Text Example",
@@ -25,7 +25,7 @@ Scenario:
             "url": "https://beedevs.com/images/android-icon-192x192.png",
             "text": "Logo Image",
             "buttons": {
-                "https://beedevs.com/": "Visit Website"
+              "https://beedevs.com/": "Visit Website"
             }
           }
         },
@@ -145,24 +145,53 @@ Scenario:
         {
           "name": "Ask Example",
           "type": "ask",
-          "content": "Please, type your phone below",
+          "content": "Please, type your email below. If you put test@test.com email instead the response will be different from usual, this made to show 'if' block in action",
           "template": "ask",
+          "validate": "email",
           "result": {
-            "save": "{{phone}}"
+            "save": "{{email}}"
           },
-          "next": "Reply Thanks"
+          "next": "If Example"
+        },
+        {
+          "name": "If Example",
+          "type": "if",
+          "next": [
+            ["{{email}}", "==", "test@test.com", "Reply Cool"],
+            ["{{email}}", "!=", "test@test.com", "Reply Thanks"]
+          ]
+        },
+        {
+          "name": "Reply Cool",
+          "type": "text",
+          "typing": "1s",
+          "content": "Cool! 'If' block works!"
         },
         {
           "name": "Reply Thanks",
           "type": "text",
           "typing": "1s",
-          "content": "Thank you! Your phone number: {{phone}}"
+          "content": "Thank you! Your email: {{email}}"
         },
         {
           "name": "Method Example",
           "type": "method",
           "template": "method",
           "method": "myMethod"
+        },
+        {
+          "name": "Extend Example",
+          "type": "extend",
+          "base": "Menu Example",
+          "template": "extend",
+          "content": {
+            "text": "Overridden menu with 'extend' block",
+            "buttons": [
+              {
+                "extend": "Call this menu again"
+              }
+            ]
+          }
         }
       ],
       "drivers": [
